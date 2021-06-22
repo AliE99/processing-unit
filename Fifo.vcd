@@ -1,0 +1,61 @@
+$date
+     Jun 22, 2021       12:38:11
+$end
+
+$version
+ SystemC 2.3.2-Accellera --- Apr 21 2021 12:20:22
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire   32  aaaaa  Input [31:0]  $end
+$var wire    1  aaaab  Read_FIFO       $end
+$var wire    1  aaaac  Write_FIFO       $end
+$var wire    1  aaaad  Reset       $end
+$var wire   32  aaaae  Output [31:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+b1010 aaaaa
+0aaaab
+1aaaac
+0aaaad
+b0 aaaae
+$end
+
+#10000
+b10100 aaaaa
+
+#20000
+b11110 aaaaa
+
+#30000
+b0 aaaaa
+1aaaab
+0aaaac
+
+#31000
+b1010 aaaae
+
+#42250
+b10100 aaaae
+
+#57250
+b11110 aaaae
+
+#60000
+0aaaab
+1aaaad
+
+#61000
+b0 aaaae
+
+#100000
